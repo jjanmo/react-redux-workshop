@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size : 25px;
-    color : #1abc9c;
+    font-size : 30px;
+    color : dodgerblue;
   }
   a {
     text-decoration:none;
@@ -23,6 +23,9 @@ const GlobalStyles = createGlobalStyle`
     align-items: center;
     width : 100%;
     height : 70vh;
+  }
+  input {
+    outline : none;
   }
 `;
 

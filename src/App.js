@@ -1,12 +1,12 @@
 import React from "react";
-import GlobalStyles from "./components/GlobalStyles";
-import Counter from "./components/Counter";
+import GlobalStyles from "./common/GlobalStyles";
+import AddApp from "./addApp/AddApp";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Counter />
+      <AddApp />
     </div>
   );
 }
