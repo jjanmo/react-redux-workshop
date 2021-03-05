@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import AddNumberRoot from "./AddNumberRoot";
 import DisplayNumberRoot from "./DisplayNumberRoot";
+import store from "../store";
 
 const Container = styled.div`
   width: 50%;
@@ -11,15 +12,17 @@ const Container = styled.div`
 `;
 
 function AddApp() {
-  const [value, setValue] = useState("0");
-  const [number, setNumber] = useState(0);
+  // const [value, setValue] = useState("0");
+  // const [number, setNumber] = useState(0);
 
   const handleChange = (e) => {
-    setValue(e.target.value);
+    console.log(store);
+    store.dispatch({ type: "change", value: parseInt(e.target.value, 10) });
   };
 
   const handleClick = () => {
-    setNumber(number + parseInt(value, 10));
+    // setNumber(number + parseInt(value, 10));
+    store.dispatch({ type: "add" });
   };
 
   return (
