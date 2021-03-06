@@ -1,12 +1,12 @@
 //initial state
 const initialState = {
-  input: '',
+  input: 0,
   number: 0,
 };
 
 //action type
-const CHANGE = 'CHANGE';
-const ADD = 'ADD';
+const CHANGE = 'addApp/CHANGE';
+const ADD = 'addApp/ADD';
 
 // action creator
 export const actionCreator = {
@@ -24,18 +24,18 @@ export const actionCreator = {
 };
 
 // reducer function
-export default function reducer(state = initialState, action) {
+export default function addAppReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE: {
       return {
         ...state,
-        input: action.input,
+        input: action.input || 0,
       };
     }
     case ADD: {
       return {
         ...state,
-        number: state.number + action.number,
+        number: state.input + state.number,
       };
     }
     default:

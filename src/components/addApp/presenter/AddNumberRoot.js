@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import AddNumber from './AddNumber';
+import AddNumberContainer from '../container/AddNumberContainer';
 
 const AddContainer = styled.div`
   border: 5px solid dodgerblue;
@@ -12,7 +12,7 @@ function AddNumberRoot() {
   return (
     <AddContainer>
       <h1>Add Number ROOT</h1>
-      <AddNumber />
+      <AddNumberContainer />
     </AddContainer>
   );
 }

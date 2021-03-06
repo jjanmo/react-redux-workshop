@@ -1,6 +1,6 @@
-import React from "react";
-import GlobalStyles from "./common/GlobalStyles";
-import AddApp from "./addApp/AddApp";
+import React from 'react';
+import GlobalStyles from './GlobalStyles';
+import AddApp from './components/addApp';
 
 function App() {
   return (

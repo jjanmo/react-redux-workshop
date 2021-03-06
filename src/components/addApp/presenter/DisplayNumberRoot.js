@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import DisplayNumber from "./DisplayNumber";
+import React from 'react';
+import styled from 'styled-components';
+import DisplayNumberContainer from '../container/DisplayNumberContainer';
 
 const Container = styled.div`
   border: 5px solid dodgerblue;
@@ -8,11 +8,11 @@ const Container = styled.div`
   margin: 10px 0;
 `;
 
-function DisplayNumberRoot({ number }) {
+function DisplayNumberRoot() {
   return (
     <Container>
       <h1> Display Number ROOT</h1>
-      <DisplayNumber number={number} />
+      <DisplayNumberContainer />
     </Container>
   );
 }

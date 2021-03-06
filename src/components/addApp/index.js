@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import AddNumberRoot from "./AddNumberRoot";
-import DisplayNumberRoot from "./DisplayNumberRoot";
+import React from 'react';
+import styled from 'styled-components';
+import AddNumberRoot from './presenter/AddNumberRoot';
+import DisplayNumberRoot from './presenter/DisplayNumberRoot';
 
 const Container = styled.div`
   width: 50%;
