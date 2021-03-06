@@ -1,4 +1,4 @@
-# React Redux
+# React Redux Tutorials
 
 > 리덕스를 리액트에서 어떻게 적용하여 사용하는지에 대해서 알아보자
 

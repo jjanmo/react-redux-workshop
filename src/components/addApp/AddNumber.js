@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import store from "../store";
 
 const Container = styled.div`
   padding: 20px;
@@ -31,13 +32,21 @@ const Input = styled.input`
   font-size: 1.5rem;
 `;
 
-function AddNumber({ handleChange, handleClick, value }) {
+function AddNumber() {
+  const handleChange = (e) => {
+    store.dispatch({ type: "change", value: parseInt(e.target.value, 10) });
+  };
+
+  const handleClick = () => {
+    store.dispatch({ type: "add" });
+  };
+
   return (
     <Container>
       <h1>Add Number</h1>
       <InputContainer>
         <Button type="button" onClick={handleClick} value="+" />
-        <Input type="number" onChange={handleChange} value={value} />
+        <Input type="number" onChange={handleChange} />
       </InputContainer>
     </Container>
   );
